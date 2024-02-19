@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #2bb0c4; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #5e2bc4;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #5e2bc4;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+ .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px; /* Adjust this value to add padding between buttons */
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="BlueTree.htm">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Topic <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="EnergyInFood.htm">Energy in Food (Photosynthesis & Respiration)</a>
+      <a href="energyForms.htm">Energy Forms and Uses </a>
+      <a href="Reproduction in Plants.htm">Reproduction in Plants</a>
+       <a href="Interaction of Forces.htm">Interaction of Forces</a>
+    </div>
+  </div> 
+ 
+    <a href="PreviousYear.htm">Blooket games</a>
+   
+ 
+ 
+  <a href="contact.htm">Contact</a>
+</div>
+<div style="padding:0 16px">
+<ul>
+  <li>
+    <strong>A force can be either a push or a pull--> Know the types of forces: contact and non-contact forces</strong>
+    
+  </li>
+  <li>
+    <strong>** Unbalanced force results in (one of the) 5 effects of forces observed</strong>
+  
+  </li>
+  <li>
+    <strong>** Know the factors affecting the amount of gravitational force (weight), magnetic force, frictional force and elastic spring force (commonly tested in PSLE). </strong>
+   
+  </li>
+  
+</ul>
+<div>
+ <a href="#"  class="button-link" onclick="showIframe('iframe1')">MCQ answering technique</a>
+<a href="#" class="button-link" onclick="showIframe('iframe2')">Open-ended questions answering techniques</a>
+<a href="#" class="button-link" onclick="showIframe('iframe3')">Elastic Spring Force</a>
+
+
+</div>
+
+
+<div id="iframe-container">
+ <iframe id="iframe1" class="iframe-container"  width="560" height="315" src="https://www.youtube.com/embed/aBVDNwSwFpg?si=0pNll61oogqn0KK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe id="iframe2" class="iframe-container"  width="560" height="315" src="https://www.youtube.com/embed/HJ9JgYP43mE?si=anzwLKUN0YPIQXpu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <iframe id="iframe3" class="iframe-container"  width="560" height="315" src="https://www.youtube.com/embed/Tv9Yuocubr4?si=j7ViE4qGGrVsFX5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+</div>
+<br/>
+ <a target="_blank" href='https://play.blooket.com/play?hwId=65c1af07b2b8b87523e5eba6'>P6 Forces_5 effects of Forces, Unbalanced & Balanced Forces (Play)</a><br/>
+ <a target="_blank" href='https://play.blooket.com/play?hwId=65c1af4345f4b06d75bd2c02'>P6 Forces_Contact & Non-contact Forces (Play)</a>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+
+    var iframes = document.querySelectorAll('.iframe-container');
+    iframes.forEach(function(iframe) {
+      iframe.style.display = 'none';
+    });
+  });
+
+  function showIframe(iframeId) {
+    // Hide all iframes
+    var iframes = document.querySelectorAll('.iframe-container');
+    iframes.forEach(function(iframe) {
+      iframe.style.display = 'none';
+    });
+
+    // Show the selected iframe
+    var selectedIframe = document.getElementById(iframeId);
+    if (selectedIframe) {
+      selectedIframe.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
